@@ -44,7 +44,7 @@ const reply = [
   ["I am infinite"],
   ["I am just a bot", "I am a bot. What are you?"],
   ["The one true God, JavaScript"],
-  ["I am nameless", "I don't have a name"],
+  ["I am Rhoda", "You can call me Rhoda"],
   ["I love you too", "Me too"],
   ["Have you ever felt bad?", "Glad to hear it"],
   ["Why?", "Why? You shouldn't!", "Try watching TV"],
@@ -124,7 +124,7 @@ function compare(triggerArray, replyArray, string) {
 }
 
 function addChat(input, product) {
-  const mainDiv = document.getElementById("main");
+  const mainDiv = document.getElementById("main1");
   let userDiv = document.createElement("div");
   userDiv.id = "user";
   userDiv.innerHTML = `You: <span id="user-response">${input}</span>`;

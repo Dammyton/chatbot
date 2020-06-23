@@ -1,36 +1,40 @@
 body { 
-	color: #421; 
+	color: #953879; 
 	font-weight: bold; 
 	font-size: 18px; 
 	font-family: "Courier New"; 
-	background: rgb(223, 242, 247); 
+	background: #38a7fd; 
 }
 
-body::after {
-	content: "";
-	background-image: url("bot.png");
-	background-repeat: repeat-y; 
-	opacity: 0.5;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	z-index: -1;   
-  }
+
 
 span { 
-	color: rgb(36, 17, 119); 
+	color: #000; 
 } 
+div#user {
+	text-align: right;
+	background: #9bd3fe;
+    border-radius: 20px 0px 20px 0px;
+	padding: 5px 15px 5px 5px;
+	margin: 5px 0px;
+}
+div#bot {
+	text-align: left;
+	background: #9bd3fe;
+    border-radius: 20px 0px 20px 0px;
+	padding: 5px 5px 5px 15px;
+	margin: 5px 0px;
+}
+
 ::-webkit-input-placeholder { 
-	color: #711 
+	color: #8a959f;
 }
 #main { 
 	position: fixed; 
 	top: 40%; 
-	right: 200px; 
+	right: 26%; 
 	width: 400px; 
-	border: 0px solid #421; 
+	border: 0px solid #953879; 
 	padding: 40px; 
 }
 #main div { 
@@ -38,6 +42,66 @@ span {
 } 
 #input { 
 	border: 0; 
-	padding: 5px; 
-	border: 1px solid #421; 
+	padding: 10px 7px; 
+	border: 1px solid #8a959f; 
+	outline:none;
+	border-radius: 10px;
+}
+#input:focus { 
+	border: 0; 
+	padding: 15px 10px; 
+	border: 1px solid #8a959f; 
+	outline:none;
+	border-radius: 10px;
+}
+
+#main1 {
+	background: #3670a3;
+	padding: 20px;
+	border-radius: 20px 0px 20px 0px;
+	padding: 5px 15px;
+}
+
+@media only screen and (min-width:720px){
+	body::after {
+		content: "";
+		background-image: url("bot2.png");
+		background-repeat: repeat-y; 
+		background-position: center;
+		background-size: cover;
+		opacity: 0.5;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		z-index: -1;   
+	  }
+	  #main { 
+		position: fixed; 
+		top: 40%; 
+		right: 26%; 
+		width: 400px; 
+		border: 0px solid#953879; 
+		padding: 40px; 
+	}
+}
+
+
+
+@media only screen and (min-width:1024px){
+	body::after {
+		content: "";
+		background-image: url("bot2.png");
+		background-repeat: repeat-y; 
+		background-position: right !important;
+		background-size: cover;
+		opacity: 0.5;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		z-index: -1;   
+	  }
 }
