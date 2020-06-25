@@ -73,7 +73,7 @@ const coronavirus = ["Please stay home"];
 
 document.addEventListener("DOMContentLoaded", () => {
 	const inputField = document.getElementById("input")
-	inputField.addEventListener("keydown", function(e) {
+	inputField.addEventListener("keypress", function(e) {
 		if (e.code === "Enter") {
 			let input = inputField.value;
 			inputField.value = "";
