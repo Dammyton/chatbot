@@ -43,7 +43,7 @@ const reply = [
   ],
   ["I am infinite"],
   ["I am just a bot", "I am a bot. What are you?"],
-  ["The one true God, JavaScript"],
+  ["Dammyton", "Dammyton is my master"],
   ["I am Rhoda", "You can call me Rhoda"],
   ["I love you too", "Me too"],
   ["Have you ever felt bad?", "Glad to hear it"],
@@ -52,7 +52,7 @@ const reply = [
   ["Tell me a story", "Tell me a joke", "Tell me about yourself"],
   ["You're welcome"],
   ["Bye", "Goodbye", "See you later"],
-  ["Sushi", "Pizza"],
+  ["Plantain", "Pizza"],
   ["Bro!"],
   ["Yes?"]
 ];
@@ -62,7 +62,7 @@ const reply = [
 const alternative = [
   "Same",
   "Go on...",
-  "Bro...",
+  "I didn't get that...",
   "Try again",
   "I'm listening..."
 ];
@@ -74,7 +74,7 @@ const coronavirus = ["Please stay home"];
 document.addEventListener("DOMContentLoaded", () => {
 	const inputField = document.getElementById("input")
 	inputField.addEventListener("keydown", function(e) {
-		if (e.code === "Enter") {
+		if (e.code === "Tab") {
 			let input = inputField.value;
 			inputField.value = "";
 			output(input);
