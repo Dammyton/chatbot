@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 	//Event Listener for Enter Key
 	inputField.addEventListener("keydown", function(e) {
-		if (e.code === "Enter") {
+		if ((e.code == "Enter") || (e.code == "Tab" )){
 			let input = inputField.value;
 			if (inputField.value == '') {
 		    return false;
