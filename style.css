@@ -6,6 +6,24 @@ body {
 	background: #38a7fd; 
 }
 
+button:hover {
+    background: #1c9bfe;
+    color: #fff;
+    border: 2px solid #fff;
+}
+button {
+    background: #fff;
+    color: #1c9bfe;
+    border-radius: 10px;
+    border: none;
+    padding: 3px 9px;
+    font-size: large;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+button:focus {
+    outline: none;
+}
 
 
 span { 
